@@ -60,3 +60,9 @@ line-height: 1.5;
     color: #4f46e5;
     margin-bottom: 10px;
 }
+
+.welcome-text{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
