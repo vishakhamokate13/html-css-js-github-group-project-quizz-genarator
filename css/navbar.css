@@ -1,53 +1,51 @@
 
-.main-box-navbar{
-    display: flex;
-    justify-content: space-between;
+.main-box-navbar {
+   display: flex;
+   justify-content: space-between;
    background-color: #0F172A;
-   
-
-padding: 20px 40px;
-
-  
-   
-
-   
+   padding: 20px 40px;
 }
-*{
+
+* {
    margin: 0;
    padding: 0;
-   
 }
-.logo-contaner{
+
+.logo-contaner {
    color: #6366F1;
    font-size: 25px;
 }
-.logo-contaner::first-letter{
+
+.logo-contaner::first-letter {
    color: orange;
    font-size: 30px;
 }
-.nav-links{
+
+.nav-links {
    display: flex;
    align-items: center;
    gap: 95px;
    font-size: 20px;
    font-weight: 500;
    color: #F8FAFC;
+   cursor: pointer;
 }
-.login-button-contaner{
-display: flex;
-align-items: center;
-   gap: 30px;
-  
 
+.login-button-contaner {
+   display: flex;
+   align-items: center;
+   gap: 30px;
 }
-.login-btn{
+
+.login-btn {
    border: 2px solid #6366F1;
    background-color: transparent;
    color: #6366F1;
    padding: 5px 8px;
    font-size: 15px;
 }
-.singup-btn{
+
+.singup-btn {
 
    background-color: #6366F1;
    color: white;
@@ -57,10 +55,11 @@ align-items: center;
    border-radius: 20px;
 
 }
-body{
-   background-color: #0F172A;
+body {
+   background-color: #f4f6f9; /* light background */
 }
-.menu-btn{
+
+.menu-btn {
    font-size: 30px;
    cursor: pointer;
    display: none;
@@ -72,19 +71,29 @@ body{
 
 @media (max-width:768px) {
 
-   .menu-btn{
+   .menu-btn {
       display: block;
    }
+<<<<<<< HEAD
+
+   .nav-links {
+=======
    
    .nav-links{
+>>>>>>> 298891648b29ce31acdcbb7b4d5ec21e7dd06d6b
       display: none;
    }
+<<<<<<< HEAD
+
+   .login-button-contaner {
+=======
    .login-button-contaner{
       display: none;
    }
 
    .mobile-menu.active{
       display: flex;
+>>>>>>> 298891648b29ce31acdcbb7b4d5ec21e7dd06d6b
       flex-direction: column;
       align-items: start;
     
@@ -92,6 +101,13 @@ body{
       color: white;
    }
 
+<<<<<<< HEAD
+   .main-box-navbar {
+
+      flex-wrap: wrap;
+
+   }
+=======
  
 }
 .modal{
@@ -109,5 +125,6 @@ body{
    width: 350px;
    background-color:white;
    padding: 25PX;
+>>>>>>> 298891648b29ce31acdcbb7b4d5ec21e7dd06d6b
 
 }

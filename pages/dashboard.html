@@ -1,11 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <!-- navbar -->
+    <header>
+        <div class="main-box-navbar">
+
+            <div class="logo-contaner"> <span>Quizz Master</span></div>
+
+            <div class="menu-btn" id="menu-btn"><img src="./images/humbergear-menu.svg" height="30px"></div>
+
+            <div class="nav-links">
+                <a>Home</a>
+                <a>Categories</a>
+                <a>leaderboard</a>
+            </div>
+            <div class="login-button-contaner"> <button type="button" class="login-btn"><a>login</a></button>
+                <button type="button" class="singup-btn"><a>sign up</a></button>
+            </div>
+        </div>
+
+    </header>
+    <hr>
+
+    <!-- Body -->
+
+    <h2 class="welcome-text">Welcome</h2>
+    <h2 class="welcome-text">Explore Main Exam Categories</h2>
+
+    <div class="provide-catogories">
+        <div class="design-cards">
+            <h3>UPSC</h3>
+            <br>
+            <p>UPSC is India’s most prestigious national-level exam for government jobs. It selects officers like IAS,
+                IPS, IFS, and IRS. <br>
+
+                <b>Level:</b> National <br>
+                <b>Posts: </b>IAS, IPS, IFS, IRS, etc. <br>
+                <b>Stages:</b> Prelims → Mains → Interview <br>
+                <b>Focus: </b>General Studies, Current Affairs, Essay, Optional Subject <br>
+                <b>Career:</b> Top administrative and policy-making roles in India <br>
+            </p>
+        </div>
+
+        <div class="design-cards">
+            <h3>MPSC</h3>
+            <br>
+            <p>MPSC (Maharashtra Public Service Commission)
+                MPSC conducts exams for Maharashtra state government jobs.<br>
+                <b>Level: </b>State (Maharashtra) <br>
+                <b>Posts: </b>PSI, STI, Deputy Collector, Assistant Section Officer <br>
+                <b>Stages:</b> Prelims → Mains → Interview <br>
+                <b>Focus: </b>Maharashtra GK, Current Affairs, General Studies <br>
+                <b>Career:</b> Administrative and state-level government positions <br>
+            </p>
+        </div>
+
+        <div class="design-cards">
+            <h3>NEET</h3>
+            <br>
+            <p>
+                NEET (National Eligibility cum Entrance Test)
+                NEET is the medical entrance exam for students who want to become doctors.
+                <b>Level:</b>National <br>
+                <b>Field:</b>Medical (MBBS, BDS, BAMS, etc.) <br>
+                <b>Subjects:</b> Physics, Chemistry, Biology <br>
+                <b>Stage:</b>Single written exam <br>
+                <b>Career:</b> Doctor, Dentist, Medical professional <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="provide-catogories">
+        <div class="design-cards">
+            <h3>JEE</h3>
+            <br>
+            <p>
+                JEE (Joint Entrance Examination)
+                JEE is the engineering entrance exam for admission into top engineering colleges like IITs and NITs.
+                <b>Level:</b> National <br>
+                <b>Field:</b> Engineering (B.Tech / B.E) <br>
+                <b>Subjects:</b> Physics, Chemistry, Mathematics <br>
+                <b>Stage:</b> JEE Main + JEE Advanced <br>
+                <b>Career:</b> Engineer, Scientist, Researcher <br>
+            </p>
+        </div>
+
+        <div class="design-cards">
+            <h3>RAILWAY</h3>
+            <br>
+            <p>
+                Railway Recruitment (RRB Exams)
+                Railway exams are conducted for various technical and non-technical posts in Indian Railways.
+                <b>Level:</b> National <br>
+                <b>Field:</b> Government Jobs (Railway Sector) <br>
+                <b>Subjects:</b> Mathematics, Reasoning, General Awareness, Science <br>
+                <b>Stage:</b> CBT (Computer Based Test), Skill Test (post-wise) <br>
+                <b>Career:</b> Station Master, Clerk, Technician, Engineer <br>
+            </p>
+        </div>
+
+        <div class="design-cards">
+            <h3>BANKING</h3>
+            <br>
+            <p>
+                Banking Exams (IBPS, SBI, RBI)
+                Banking exams are for recruitment in public sector banks.
+                <b>Level:</b> National <br>
+                <b>Field:</b> Banking & Finance <br>
+                <b>Subjects:</b> Reasoning, Quantitative Aptitude, English, General Awareness <br>
+                <b>Stage:</b> Prelims + Mains + Interview <br>
+                <b>Career:</b> Bank PO, Clerk, Manager, Officer <br>
+            </p>
+        </div>
+    </div>
+    <div class="categories-button">
+
+        <a href="#"><button type="button">Click Here To Select Quiz</button></a>
+    </div>
+
+    <div class="records">
+        <div class="record-container">
+            <img src="../images/total-quiz.png" alt="total-quiz">
+            <p id="main-p-class"> 6</p>
+            <p>Total Quiz</p>
+        </div>
+
+        <div class="record-container">
+            <img src="../images/quiz-question.png" alt="question-quiz">
+            <p id="main-p-class">60</p>
+            <p>Total Quiz Questions</p>
+        </div>
+        <div class="record-container">
+            <img src="../images/quiz users.png" alt="total-quiz">
+            <p id="main-p-class">120+</p>
+            <p>Total Users</p>
+        </div>
+        <div class="record-container">
+            <img src="../images/quiz-attempt.png" alt="total-quiz">
+            <p id="main-p-class">5</p>
+            <p>Total Attempt</p>
+        </div>
+    </div>
+
+    <!-- Performance Analysis -->
+     <p style="text-align: center;font-size: 27px; font-weight: bold;">Performance Analysis</p>
+    <div class="performance-analysis">
+        <div class="record-container">
+            <img src="../images/performance-analysis.png" alt="high">
+            <p>Highest Score</p>
+            <p id="main-p-class">98%</p>
+        </div>
+
+        <div class="record-container">
+            <img src="../images/performance-analysis.png" alt="avg">
+            <p>Average Score</p>
+            <p id="main-p-class">82%</p>
+        </div>
+    </div>
+
+    <div class="extra-activity-heading">
+        <p style="text-align: center;font-size: 27px; font-weight: bold; color: #1E293B;">Additional Practice Quizzes</p>
+    </div>
+
+    <!-- extra quiz section -->
+    <div class="extra-quiz">
+        <div class="extra-quiz-container">
+            <img src="../images/current-affairs.png" alt="current-affairs">
+            <p>Current Affairs</p>
+            <a href="../pages/current-affairs-quiz.html"><button type="button">Click Here To Start Quiz</button></a>
+        </div>
+
+        <div class="extra-quiz-container">
+            <img src="../images/general-knowledge.png" alt="GK">
+            <p>General Knowledge</p>
+            <a href="../pages/general-knowledge-quiz.html"><button type="button">Click Here To Start Quiz</button></a>
+        </div>
+
+        <div class="extra-quiz-container">
+            <img src="../images/awards.png" alt="awards">
+            <p>Awards & Honors</p>
+            <a href="../pages/awards-honors.html"><button type="button">Click Here To Start Quiz</button></a>
+        </div>
+
+        <div class="extra-quiz-container">
+            <img src="../images/politics-image.png" alt="">
+            <p>Indian Polytics Basics</p>
+            <a href="../pages/indian-polytics-basics.html"><button type="button">Click Here To Start Quiz</button></a>
+        </div>
+
+        <div class="extra-quiz-container">
+            <img src="../images/geography.png" alt="Geography">
+            <p>World Geography & Events</p>
+            <a href="../pages/world-geography-events.html"><button type="button">Click Here To Start Quiz</button></a>
+        </div>
+
+        <div class="extra-quiz-container">
+            <img src="../images/met-cet.png" alt="met-cet">
+            <p>MHT-CET</p>
+            <a href="../pages/cet.html"><button type="button">Click Here To Start Quiz</button></a>
+        </div>
+
+    </div>
 </body>
 </html>
