@@ -1,62 +1,137 @@
-body{
+body {
     background-color: #f0f0f0;
 }
 
-<!-- Leaderboard -->
+< !-- Leaderboard --> {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b1020;
+    color: white;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #151c35;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: #6c4cff;
+    padding: 15px;
+    font-size: 18px;
+}
+
+td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #2a3558;
+}
+
+tr:hover {
+    background: #1d2748;
+}
+
+.top {
+    font-size: 22px;
+}
+
+< !-- Quiz results -->if( !localStorage.getItem("quizResult")) {
+
+    let demoResult= {
+        name: "Vishakha",
+            correct:16,
+            wrong:4,
+            total:20
+    }
+
+    ;
+
+    localStorage.setItem("quizResult",
+        JSON.stringify(demoResult));
+
+}
+
+let result=JSON.parse(localStorage.getItem("quizResult"));
+
+// Show Quiz Stats
+
+document.getElementById("correct").innerText=result.correct;
+
+document.getElementById("wrong").innerText=result.wrong;
+
+document.getElementById("total").innerText=result.total;
+
+// Percentage
+
+let percentage=Math.round((result.correct/result.total)*100);
+
+document.getElementById("score").innerText=percentage+"%";
+
+// Leaderboard Users
+
+let players=[ {
+    name: "Rahul", score:95
+}
+
+,
+{
+name: "Priya", score:90
+}
+
+,
+{
+name: "Aman", score:85
+}
+
+,
+{
+name: "Rohit", score:70
+}
+
+,
 
 {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
+name: result.name,
+    score:percentage
 }
 
-body{
-    background:#0b1020;
-    color:white;
-    padding:40px;
+];
+
+// Sort Descending
+
+players.sort((a, b)=>b.score-a.score);
+
+// Find Rank
+
+let rank=players.findIndex(player=> player.name===result.name)+1;
+
+// Show Rank
+
+document.getElementById("rank").innerText="#"+rank;
+
+// Button
+
+function goHome() {
+    window.location.href="index.html";
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-}
-
-h1{
-    text-align:center;
-    margin-bottom:30px;
-    color:#fff;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:#151c35;
-    border-radius:12px;
-    overflow:hidden;
-}
-
-th{
-    background:#6c4cff;
-    padding:15px;
-    font-size:18px;
-}
-
-td{
-    padding:15px;
-    text-align:center;
-    border-bottom:1px solid #2a3558;
-}
-
-tr:hover{
-    background:#1d2748;
-}
-
-.top{
-    font-size:22px;
-}
-
-<!-- Quiz results -->
-
-
-<!-- My Profile data -->
+< !-- My Profile data -->
