@@ -26,4 +26,21 @@
 .short-para{
    line-height: 22px;
    font-size: 19px;
+   
+}
+#start-quizz{
+    margin-top: 70px;
+    padding: 10px 20px;
+    margin-left: 100px;
+border: 2px solid black;
+border-radius: 20px;
+font-size: 20px;
+background-color:  #6366F1;
+color: white;
+
+
+}
+
+#start-quizz:hover{
+    
 }
