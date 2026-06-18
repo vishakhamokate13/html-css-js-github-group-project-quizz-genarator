@@ -1,55 +1,136 @@
+/* SUBJECT GRID */
 .subjects{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 900px;
-    margin: 20px auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+    max-width:900px;
+    margin:20px auto;
 }
+
+/* BODY */
 body{
-    background-color: black;
-
+    background-color:#151c35;
+    font-family:Arial, sans-serif;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
+/* CARD */
 .card{
-    background-color: rgb(92, 16, 142);
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #c3c6d7;
-    cursor: pointer;
-    transition: 0.3s;
-    text-align: center;
-    height: 200px;
-    width: 250px;
+    background-color:whitesmoke;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #c3c6d7;
+    cursor:pointer;
+    transition:0.3s;
+    text-align:center;
+    height:220px;
+    width:250px;
+    margin:auto;
 }
 
+/* HOVER EFFECT */
 .card:hover{
-    transform: translateY(-5px);
+    transform:translateY(-6px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* IMAGE */
 .card img{
-    width: 100px;      
-    height: 100px;   
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 15px auto;
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 15px auto;
 }
 
+/* TITLE */
 .card h3{
-    font-size: 18px;
-    color: #004ac6;
+    font-size:18px;
+    color:blue;
+    margin-bottom:10px;
 }
+
+/* START BUTTON */
 .start-btn{
-    margin-top: 1px;
-    padding: 10px 20px;
-    background-color: #004ac6;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 10px;
-    transition: 0.3s;
+    margin-top:10px;
+    padding:10px 18px;
+    background-color:#7c3aed;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:12px;
+    transition:0.3s;
 }
 
 .start-btn:hover{
-    background-color: #003399;
+    background-color:blue;
+}
+
+/* QUIZ CONTAINER */
+#quiz-container{
+    display:none;
+    max-width:700px;
+    margin:30px auto;
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* QUESTION */
+#question{
+    font-size:18px;
+    margin:15px 0;
+}
+
+/* OPTIONS */
+.option{
+    display:block;
+    text-align:left;
+    background:#f3f4f6;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.option:hover{
+    background:#e5e7eb;
+}
+
+/* NEXT BUTTON */
+#nextBtn{
+    margin-top:15px;
+    padding:10px 20px;
+    background:#16a34a;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+#nextBtn:hover{
+    background:#15803d;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .subjects{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:500px){
+    .subjects{
+        grid-template-columns:1fr;
+    }
+
+    .card{
+        width:100%;
+    }
 }

@@ -17,7 +17,8 @@
             <div class="card" onclick="showSubject('UPSC')">
                 <img src="./../images/UPSC.png" alt="UPSC">
                 <h3>UPSC</h3>
-                <button class="start-btn">Start Quiz</button>
+                <a href="./../pages/upsc-quizz.html"><button tpye="button" class="start-btn">start quiz</button></a>
+            
 
             </div>
 
@@ -25,12 +26,12 @@
                 <img src="./../images/doctor.png" alt="NEET">
                 <h3>NEET</h3>
                 <button class="start-btn">Start Quiz</button>
-                
+
             </div>
 
             <div class="card" onclick="showSubject('BANK')">
                 <img src="./../images/bank.png" alt="BANK">
-                <h3>bank</h3>
+                <h3>BANK</h3>
                 <button class="start-btn">Start Quiz</button>
             </div>
 
@@ -54,45 +55,7 @@
             </div>
 
         </div>
-        <p id="subjectInfo">Click any subject card to view details.</p>
-
-        <script>
-            function showSubject(subject) {
-
-                const info = document.getElementById("subjectInfo");
-
-                if (subject === "UPSC") {
-                    info.innerText =
-                        "UPSC: Civil Services Exam preparation for IAS, IPS and IFS.";
-                }
-
-                else if (subject === "NEET") {
-                    info.innerText =
-                        "NEET: Medical entrance exam for MBBS, BDS and other courses.";
-                }
-
-                else if (subject === "JEE") {
-                    info.innerText =
-                        "JEE: Engineering entrance exam for IITs, NITs and IIITs.";
-                }
-
-                else if (subject === "RAILWAY") {
-                    info.innerText =
-                        "Railway: Preparation for RRB NTPC, Group D and Technical exams.";
-                }
-
-                else if (subject === "Computer Science") {
-                    info.innerText =
-                        "Computer Science: HTML, CSS, JavaScript, Programming and DSA.";
-                }
-
-                else if (subject === "NDA") {
-                    info.innerText =
-                        "NDA: National Defence Academy entrance exam preparation.";
-                }
-            }
-        </script>
-
+        
 </body>
 
 </html>
