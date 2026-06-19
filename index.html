@@ -1,77 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quizz</title>
-    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/NavBar.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
 <body>
     <header>
         <div class="main-box-navbar">
-           
-               <div class="logo-contaner"> <span>Quizz Master</span></div>
 
-               <div class="menu-btn" id="menu-btn"><img src="./images/humbergear-menu.svg" height="30px"></div>
-           
-           <div class="nav-links" id="links"><a>Home</a>
-            <a>Categories</a>
-            <a>leaderboard</a> </div>
-           <div class="login-button-contaner" > <button type="button" class="login-btn"><a>login</a></button>
-            <button type="button" class="singup-btn"><a>sign up</a></button></div></div>
+            <div class="logo-contaner"> <span>Quizz Master</span></div>
 
-            <!--mobile menu-->
-            <div class="mobile-menu" id="mbl-menu">
-                <a>Home</a>
+            <div class="menu-btn" id="menu-btn"><img src="./images/humbergear-menu.svg" height="30px"></div>
+
+            <div class="nav-links" id="links"><a href="./pages/dashboard.html"  id="dashboard-link">Dashboard</a>
+                <a href="./pages/categories.html"  id="Categories-link">Categories</a>
+                <a href="./pages/leaderboard.html"  id="leaderboard-link">leaderboard</a>
+                <a href="#" target="_blank">Contact</a>
+            </div>
+            <div class="login-button-contaner"> 
+                <button type="button" class="login-btn" id="logn-btn"><a>Login</a></button>
+            </div>
+        </div>
+
+        <!--mobile menu-->
+        <div class="mobile-menu" id="mbl-menu">
+            <a>Home</a>
             <a>Categories</a>
             <a>leaderboard</a>
 
-            <button>Login</button>
+            <button id="logn-btn">Login</button>
             <button>Sign up</button>
-            </div>
-       
-    </header><hr>
+        </div>
 
-    <!--login singup modal code-->
+    </header>
+    <hr>
+
+    <!--login  modal code-->
     <div class="modal" id="lgn-modal">
-       
+
         <div class="modal-ctn">
-             <div class="form-img">
-            <img src="./images/login-img.svg" height="300px">
-        </div>
+            <span class="close" id="close-lgn">&times;</span>
+
+            <div class="form-img">
+                <img src="./images/login-img.svg" height="300px">
+            </div>
+
             <form id="login-form">
-            <h2>Login</h2>
-            
-            <label for="login-email">Enter Email</label> <br>
 
-        <input type="text" placeholder="Enter your Email" id="login-email"><br>
+                <h2>Login</h2>
+                <label for="login-email">Enter Email</label> <br>
 
-        <label for="lgn-pswrd">Password</label><br>
-        <input type="password" placeholder="Password" id="lgn-pswrd"><br>
-        <button type="submit">Login</button>
-       
-    </form>
+                <input type="text" placeholder="Enter your Email" id="login-email"><br>
+
+                <label for="lgn-pswrd">Password</label><br>
+                <input type="password" placeholder="Password" id="lgn-pswrd"><br>
+                <button type="submit">Login</button>
+<p>Don't have an account?</p>
+<a href="#" id="openSignup">Create Account</a>
+            </form>
         </div>
+    </div>
+
+    <!--signup btn code-->
+    <div class="signup-modal" id="signupModal">
+
+        <div class="modal-content">
+
+            <div> <span class="close" id="signupClose">
+                    &times;
+                </span></div>
+            <div class="signup-img"><img src="./images/signup-img.svg" height="350px"></div>
+
+           <div class="form-wrapper">
+             <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" id="name" placeholder="Full Name">
+
+                <input type="email" id="email" placeholder="Email">
+
+                <input type="password" id="password" placeholder="Password">
+
+                <input type="password" placeholder="confirm password">
+
+                <button type="submit">
+                    Create account
+                </button>
+<p>
+    Already have an account?<a href="#" id="openLogin">Login</a>
+</p>
+            </form>
+           </div>
+
+        </div>
+
     </div>
     <!--hero-section-->
     <div class="imag-text-btn-box">
-        <div><h2 class="h2-head">Test your knowldeg,<br><span class="color-text"> challenge your self!!</span></h2>
-        <p class="short-para">play quizzes improve skills and <br>compete with the best.</p>
-    <button type="button" id="start-quizz">Start Quizz</button></div>
-        
-    
-    <div class="">
-        <img src="./images/hero-section-img.svg" height="450px">
-    </div>
-    </div>
-    <script>
-        const menubtn =document.getElementById("menu-btn");
-        const navlinks =document.getElementById("mbl-menu");
+        <div>
+            <h2 class="h2-head">Test your knowldeg,<br><span class="color-text"> challenge your self!!</span></h2>
+            <p class="short-para">play quizzes improve skills and <br>compete with the best.</p>
+            <button type="button" id="start-quizz">Start Quizz</button>
+        </div>
 
-        menubtn.addEventListener("click",() =>{
+
+        <div class="">
+            <img src="./images/hero-section-img.svg" height="450px">
+        </div>
+    </div>
+    
+       <section class="stats-section">
+
+    <h2 class="stats-heading">
+        Our Impact in Numbers 🚀
+    </h2>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h3>10K+</h3>
+            <p>Quizzes Played</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>5K+</h3>
+            <p>Active Players</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>100+</h3>
+            <p>Categories</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>50K+</h3>
+            <p>Questions Answered</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="categories-section">
+
+    <h2 class="category-heading">
+        Popular Categories 📚
+    </h2>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <span></span>
+            <h3>UPSC</h3>
+            <p>Test your knowledge of Polity, History, Geography and Current Affairs.</p>
+        </div>
+
+        <div class="category-card">
+            <span></span>
+            <h3>NEET</h3>
+            <p>Practice Biology, Physics and Chemistry for NEET preparation.</p>
+        </div>
+
+        <div class="category-card">
+            <span></span>
+            <h3>BANK</h3>
+            <p>Improve your Quantitative Aptitude, Reasoning and English skills.</p>
+        </div>
+
+        <div class="category-card">
+            <span></span>
+            <h3>TECH</h3>
+            <p>Challenge yourself with Programming, Web Development and IT concepts.</p>
+        </div>
+
+        <div class="category-card">
+            <span></span>
+            <h3>railway</h3>
+            <p>Prepare for Railway exams with GK, Reasoning and Math quizzes.</p>
+        </div>
+
+        <div class="category-card">
+            <span></span>
+            <h3>NDA</h3>
+            <p>Boost your defence exam preparation with NDA practice quizzes.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="why-choose-section">
+
+    <h2 class="why-heading">
+        Why Choose Quiz Master? 🚀
+    </h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <div class="icon">⚡</div>
+
+            <h3>Instant Results</h3>
+
+            <p>
+                Get your score instantly after completing a quiz.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">🏆</div>
+
+            <h3>Leaderboard Ranking</h3>
+
+            <p>
+                Compete with other players and climb the leaderboard.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="icon">📈</div>
+
+            <h3>Track Progress</h3>
+
+            <p>
+                Monitor your performance and improve over time.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Logo Section -->
+        <div class="footer-box">
+            <h2 class="footer-logo">Quiz Master</h2>
+            <p>
+                Challenge your knowledge, track your progress,
+                and compete with quiz enthusiasts worldwide.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+
+            <a href="./index.html">Home</a>
+            <a href="./pages/dashboard.html">Dashboard</a>
+            <a href="./pages/categories.html">Categories</a>
+            <a href="./pages/leaderboard.html">Leaderboard</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h3>Contact Us</h3>
+
+            <p> quizmaster@gmail.com</p>
+            <p> +91 9876543210</p>
+            <p>  India</p>
+        </div>
+
+        <!-- Social -->
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <a href="#"> GitHub</a>
+            <a href="#"> LinkedIn</a>
+            <a href="#"> Instagram</a>
+            <a href="#"> Twitter</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Quiz Master | All Rights Reserved
+        </p>
+    </div>
+
+</footer>
+    <script>
+        const menubtn = document.getElementById("menu-btn");
+        const navlinks = document.getElementById("mbl-menu");
+
+        menubtn.addEventListener("click", () => {
             navlinks.classList.toggle("active");
         });
-    </script>
+
+
+        const loginbtn = document.getElementById("logn-btn");
+        const loginmodal = document.getElementById("lgn-modal");
+        const close = document.getElementById("close-lgn");
+
+
+
+
+        loginbtn.addEventListener("click", () => {
+            loginmodal.style.display = "block";
+        });
+
+        close.addEventListener("click", () => {
+            loginmodal.style.display = "none";
+        });
+
+        // Signup Modal
+const signupModal = document.getElementById("signupModal");
+const signupClose = document.getElementById("signupClose");
+
+// Forms
+const signupForm = document.getElementById("signupForm");
+const loginForm = document.getElementById("login-form");
+
+// Links
+const openSignup = document.getElementById("openSignup");
+const openLogin = document.getElementById("openLogin");
+
+
+// Login -> Signup
+
+openSignup.addEventListener("click",(e)=>{
+
+    e.preventDefault();
+
+    loginmodal.style.display="none";
+
+    signupModal.style.display="block";
+
+});
+
+
+// Signup -> Login
+
+openLogin.addEventListener("click",(e)=>{
+
+    e.preventDefault();
+
+    signupModal.style.display="none";
+
+    loginmodal.style.display="block";
+
+});
+
+
+// Signup Logic
+
+signupForm.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+
+    const name =
+    document.getElementById("name").value;
+
+    const email =
+    document.getElementById("email").value;
+
+    const password =
+    document.getElementById("password").value;
+
+    let users =
+    JSON.parse(localStorage.getItem("users"))
+    || [];
+
+    const alreadyExists =
+    users.some(user=>user.email===email);
+
+    if(alreadyExists){
+
+        alert("User already exists!");
+
+        return;
+    }
+
+    users.push({
+        name,
+        email,
+        password
+    });
+
+    localStorage.setItem(
+        "users",
+        JSON.stringify(users)
+    );
+
+    alert("Signup Successful");
+    localStorage.setItem("isLoggedIn","true");
+
+localStorage.setItem("currentUser", name);
+
+window.location.href = "./../pages/dashboard.html";
+
+});
+
+
+
+// Login Logic
+
+loginForm.addEventListener("submit",(e)=>{
+
+    e.preventDefault();
+
+    const email =
+    document.getElementById("login-email").value;
+
+    const password =
+    document.getElementById("lgn-pswrd").value;
+
+    let users =
+    JSON.parse(localStorage.getItem("users"))
+    || [];
+
+    const user =
+    users.find(user=>
+
+        user.email===email &&
+        user.password===password
+
+    );
+
+    if(user){
+
+    alert("Login Successful");
+
+    localStorage.setItem("isLoggedIn","true");
+
+    localStorage.setItem("currentUser", user.name);
+
+    window.location.href = "./../pages/dashboard.html";
+
+}
+    else{
+
+        alert("Invalid Email or Password");
+
+
+    }
+
+});
+
+const dashboardLink =
+document.getElementById("dashboard-link");
+
+const categoriesLink =
+document.getElementById("Categories-link");
+
+const leaderboardLink =
+document.getElementById("leaderboard-link");
+
+
+function checkLogin(event){
+
+    const isLoggedIn =
+    localStorage.getItem("isLoggedIn");
+
+    if(isLoggedIn !== "true"){
+
+        event.preventDefault();
+
+        loginmodal.style.display = "block";
+
+    }
+
+}
+
+
+dashboardLink.addEventListener(
+    "click",
+    checkLogin
+);
+
+categoriesLink.addEventListener(
+    "click",
+    checkLogin
+);
+
+leaderboardLink.addEventListener(
+    "click",
+    checkLogin
+);
+
+
+
+
+    const startQuizBtn =
+document.getElementById("start-quizz");
+
+startQuizBtn.addEventListener("click", function(e){
+
+    const isLoggedIn =
+    localStorage.getItem("isLoggedIn");
+
+    if(isLoggedIn !== "true"){
+
+        e.preventDefault();
+
+        alert("Please Login or Sign Up first to start the quiz!");
+
+    }
+    else{
+
+        window.location.href =
+        "./pages/dashboard.html";
+
+    }
+
+});
+         </script>
+
+
+     
+               
+       
+
+        
+   
 </body>
+
 </html>

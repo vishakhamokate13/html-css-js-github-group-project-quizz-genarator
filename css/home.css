@@ -37,10 +37,138 @@ border-radius: 20px;
 font-size: 20px;
 background-color:  #6366F1;
 color: white;
+cursor: pointer;
 
 
 }
+.stats-section{
+    padding:80px 8%;
+    text-align:center;
+}
 
-#start-quizz:hover{
-    
+.stats-heading{
+    font-size:2rem;
+    margin-bottom:50px;
+    color:white;
+}
+
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.stat-card{
+    width:220px;
+    padding:30px 20px;
+    background:#ffffff;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.stat-card:hover{
+    transform:translateY(-8px);
+}
+
+.stat-card h3{
+    font-size:2.2rem;
+    color:#6366f1;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#64748b;
+    font-size:1rem;
+}
+
+.categories-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.category-heading{
+    font-size:2rem;
+    color:white;
+    margin-bottom:50px;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.category-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+}
+
+.category-card span{
+    font-size:3rem;
+}
+
+.category-card h3{
+    margin:15px 0 10px;
+    color:#6366f1;
+}
+
+.category-card p{
+    color:#64748b;
+    line-height:1.6;
+}
+
+.why-choose-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.why-heading{
+    font-size:2rem;
+    color:white;
+    margin-bottom:50px;
+}
+
+.why-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.why-card{
+    background:#ffffff;
+    width:300px;
+    padding:35px 25px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.why-card h3{
+    color:#6366f1;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#64748b;
+    line-height:1.6;
 }

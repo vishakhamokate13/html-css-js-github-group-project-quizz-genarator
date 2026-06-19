@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Clarity Dashboard</title>
-    <link rel="stylesheet" href="./../css/demo.css">
+    <title>Quizz Master</title>
+    <link rel="stylesheet" href="./../css/categories.css">
+    <link rel="stylesheet" href="./../css/navbar.css">
 </head>
 
 <body>
+    <header>
+        <div class="main-box-navbar">
+           
+               <div class="logo-contaner"> <span>Quizz Master</span></div>
 
-    <h1>Academic Clarity Dashboard</h1>
+               <div class="menu-btn" id="menu-btn"><img src="./images/humbergear-menu.svg" height="30px"></div>
+           
+           <div class="nav-links" id="links"><a>Home</a>
+            <a>Categories</a>
+            <a>leaderboard</a> </div>
+           <div class="login-button-contaner" > <button type="button" class="login-btn" id="logn-btn"><a>login</a></button>
+            <button type="button" class="singup-btn"><a>sign up</a></button></div></div>
+
+            <!--mobile menu-->
+            <div class="mobile-menu" id="mbl-menu">
+                <a>Home</a>
+            <a>Categories</a>
+            <a>leaderboard</a>
+
+            <button id="logn-btn">Login</button>
+            <button>Sign up</button>
+            </div>
+       
+    </header><hr>
 
     <div class="subjects">
 
@@ -19,73 +42,45 @@
             <div class="card" onclick="showSubject('UPSC')">
                 <img src="./../images/UPSC.png" alt="UPSC">
                 <h3>UPSC</h3>
+                <a href="./../pages/upsc-quizz.html"><button tpye="button" class="start-btn">start quiz</button></a>
+            
+
             </div>
 
             <div class="card" onclick="showSubject('NEET')">
                 <img src="./../images/doctor.png" alt="NEET">
                 <h3>NEET</h3>
+                <button class="start-btn">Start Quiz</button>
+
             </div>
 
-            <div class="card" onclick="showSubject('bank')">
-                <img src="./../images/bank.png" alt="bank">
-                <h3>bank</h3>
+            <div class="card" onclick="showSubject('BANK')">
+                <img src="./../images/bank.png" alt="BANK">
+                <h3>BANK</h3>
+                <button class="start-btn">Start Quiz</button>
             </div>
 
             <div class="card" onclick="showSubject('RAILWAY')">
                 <img src="./../images/railway.png" alt="RAILWAY">
                 <h3>RAILWAY</h3>
+                <button class="start-btn">Start Quiz</button>
+
             </div>
 
             <div class="card" onclick="showSubject('Computer Science')">
-                <img src="./../images/COMPUTER.png" alt="Computer Science">
-                <h3>Computer Science</h3>
+                <img src="./../images/tech.png" alt="TECH">
+                <h3>TECH</h3>
+                <button class="start-btn">Start Quiz</button>
             </div>
 
             <div class="card" onclick="showSubject('NDA')">
                 <img src="./../images/NDA.png" alt="NDA">
                 <h3>NDA</h3>
+                <button class="start-btn">Start Quiz</button>
             </div>
 
         </div>
-        <p id="subjectInfo">Click any subject card to view details.</p>
-
-        <script>
-            function showSubject(subject) {
-
-                const info = document.getElementById("subjectInfo");
-
-                if (subject === "UPSC") {
-                    info.innerText =
-                        "UPSC: Civil Services Exam preparation for IAS, IPS and IFS.";
-                }
-
-                else if (subject === "NEET") {
-                    info.innerText =
-                        "NEET: Medical entrance exam for MBBS, BDS and other courses.";
-                }
-
-                else if (subject === "JEE") {
-                    info.innerText =
-                        "JEE: Engineering entrance exam for IITs, NITs and IIITs.";
-                }
-
-                else if (subject === "RAILWAY") {
-                    info.innerText =
-                        "Railway: Preparation for RRB NTPC, Group D and Technical exams.";
-                }
-
-                else if (subject === "Computer Science") {
-                    info.innerText =
-                        "Computer Science: HTML, CSS, JavaScript, Programming and DSA.";
-                }
-
-                else if (subject === "NDA") {
-                    info.innerText =
-                        "NDA: National Defence Academy entrance exam preparation.";
-                }
-            }
-        </script>
-
+        
 </body>
 
 </html>
