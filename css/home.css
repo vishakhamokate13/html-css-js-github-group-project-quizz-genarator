@@ -295,6 +295,48 @@
 
 /*resposive code for category card*/
 
+@media (max-width:768px){
+
+.categories-section{
+    padding: 30px 20px;
+}
+
+.category-heading{
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+}
+
+.category-heading img{
+    height: 25px;
+}
+
+.category-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.category-card{
+    padding: 20px 15px;
+}
+
+.category-card h3{
+    font-size: 1.2rem;
+}
+
+.category-card p{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+}
+@media (max-width:480px){
+
+.category-container{
+    grid-template-columns: 1fr;
+}
+
+}
+
 
 
 }
