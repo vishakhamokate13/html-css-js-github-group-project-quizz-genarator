@@ -265,44 +265,12 @@ body{
 /* css of above card part */
     .explore-section{
     width:90%;
-    max-width:1000px;
     margin:50px auto;
-    padding:70px 40px;
+    padding:70px 20px;
     text-align:center;
     border-radius:30px;
-    background:linear-gradient(135deg,#1e293b,#18223c,#312e81);
-    box-shadow:0 0 30px rgba(99,102,241,.4);
     position:relative;
     overflow:hidden;
-}
-
-.explore-section::before{
-    content:"";
-    position:absolute;
-    width:150px;
-    height:150px;
-    background:rgba(99,102,241,.25);
-    border-radius:50%;
-    top:-80px;
-    left:-80px;
-    filter:blur(80px);
-}
-
-.explore-section::after{
-    content:"";
-    position:absolute;
-    width:150px;
-    height:150px;
-    background:rgba(124,58,237,.25);
-    border-radius:50%;
-    bottom:-80px;
-    right:-80px;
-    filter:blur(80px);
-}
-
-.explore-content{
-    position:relative;
-    z-index:1;
 }
 
 .badge{
@@ -331,78 +299,4 @@ body{
     color:#cbd5e1;
     font-size:18px;
     line-height:1.8;
-}
-
-/* css of below card part */
-
-.contact-section{
-    width: 60%;
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 50px;
-    border-radius: 30px;
-    background: linear-gradient(135deg,#18223c,#1e293b,#312e81);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 15px 40px rgba(99,102,241,.3);
-}
-
-.contact-section::before{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(99,102,241,.2);
-    border-radius: 50%;
-    top: -120px;
-    left: -120px;
-    filter: blur(100px);
-}
-
-.contact-section::after{
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background: rgba(124,58,237,.2);
-    border-radius: 50%;
-    bottom: -120px;
-    right: -120px;
-    filter: blur(100px);
-}
-
-.contact-content{
-    position: relative;
-    z-index: 1;
-}
-
-.contact-content h2{
-    font-size: 35px;
-    color: white;
-    margin-bottom: 25px;
-}
-
-.contact-content p{
-    color: #cbd5e1;
-    font-size: 18px;
-    line-height: 1.9;
-    max-width: 750px;
-    margin: 0 auto 20px;
-}
-
-.contact-btn{
-    background-color: #6366F1;
-    font-family: inherit;
-    margin: 10px;
-    padding: 15px;
-    color: white;
-    border-radius: 10px;
-    font-size: 18px;
-    display: block;
-    margin: 30px auto;
-    cursor: pointer;
-    border: none;
-}
-   
-.contact-btn:hover{
-   background-color: #4f42e2;
 }
