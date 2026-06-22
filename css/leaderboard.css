@@ -10,7 +10,7 @@ body {
     background-color: #f3f4f6;
     color: #1f2937;
     min-height: 100vh;
-    padding: 40px 20px;
+    
 }
 
 
@@ -21,6 +21,7 @@ body {
 }
 
 .heading {
+    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
